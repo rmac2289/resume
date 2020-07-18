@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ross MacDonald Resume</title>
+    <style>
+        * {
+            list-style: none;
+            font-family: Garamond, sans-serif;
+        }
+        ul {
+            padding-left: 0;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+            box-sizing: border-box;
+            height: 100%;
+        }
+        .header {
+            flex: 1;
+            display: flex;
+            height: 200px;
+            
+        }
+        .header-box-1 {
+            height: 250px;
+            flex: 1;
+            background-color: rgb(49, 112, 142,0.6);
+            align-items: center;
+            display: flex;
+            padding: 1%;
+        }
+        .header-box-2 {
+            display: flex;
+            flex-direction: column;
+            height: 250px;
+            flex: 2;
+            background: rgb(49, 112, 142,0.3);
+            align-items: center;
+            padding: 1%;
+            justify-content: center;
+        }
+        .main {
+            flex: 3;
+            display: flex;
+        }
+        .main-box-1 {
+            flex: 1;
+            background: rgb(49, 112, 142,0.3);
+            height: 1100px;
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            padding: 1%;
+        }
+        .main-box-2 {
+            flex: 2;
+            height: 1100px;
+            background: rgb(49, 112, 142,0.05);
+            padding: 1%;
+        }
+        .job-h3 {
+            margin-bottom: 5px;
+        }
+        .job-h4 {
+            margin: 0;
+        }
+        .job-year {
+            margin-top: 5px;
+        }
+        .header-box-2-p {
+            margin-top: 10px;
+            margin-bottom: 0;
+        }
+        .job-title-box {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin: 0;
+            padding: 0;
+        }
+        .job-p, .projects, .project-p {
+            margin-top: 0;
+        }
+        .job-1, .job-2 {
+            border-bottom: .5px dashed rgb(0,0,0,0.2)
+        }
+        .projects {
+            margin-bottom: 0;
+        }
+        h2 {
+            border-bottom: .5px solid rgb(0,0,0,0.2)
+
+        }
+        .summary {
+            margin-bottom: 0;
+        }
+        
+        .job-1,.job-2,.job-3, .projects-header, .project-1, .project-2,.job-header,.header-sub-box-2,.header-sub-box-3 {
+            width: 95%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .tech, .education, .skills, .header-sub-box-1 {
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .school-name, .city,.degree {
+            margin: 0;
+        }
+        .job-year {
+            margin-bottom: 8px;
+            margin-top: 0;
+        }
+        .projects-box {
+            display: flex;
+            width: 100%;
+        }
+        .project-container {
+            height: 150px;
+            flex: 1;
+        }
+        .project-container p {
+            margin-top: 5px;
+        }
+      
+        .project-title {
+            margin-bottom: 0;
+        }
+        .project-link {
+            color: rgb(49, 112, 142);
+        }
+        #site {
+            color: rgb(36, 35, 35);
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="header-box-1">
+            <div class="header-sub-box-1">
+                <h1 class="name-header">ROSS <br/>MACDONALD</h1>
+                <ul class="contact-list">
+                    <li class="contact-list-item">&#9993; rmac2289@gmail.com</li>
+                    <li class="contact-list-item">&#9990; (609) 610-2877</li>
+                    <li class="contact-list-item">1240 Holly St, #2 <br/> San Carlos, CA 94070</li>
+                    <li class="contact-list-item"><a id="site" href="https://ross-scott-macdonald.com" target="_blank">www.ross-scott-macdonald.com</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="header-box-2">
+            <div class="header-sub-box-2">
+                <h2 class="summary">professional summary</h2>
+                <p class="header-box-2-p">
+                    Determined web developer adept with a knack for creative problem solving. 
+                    Knowledgeable in user interface, testing and the backend. 
+                    Proficient in an assortment of technologies, including React, JavaScript, Node.js, Express.js, HTML/CSS, and PostgreSQL. 
+                    Passionate about learning new technologies and coding languages. 
+                    Able to effectively self-manage during independent projects, as well as collaborate in a team setting. 
+                    Looking for an entry-level position at a great company to be a hard-working asset to any team, to learn, grow and develop long-term.
+                </p>
+            </div>
+        </div>
+    </header>
+    
+    <div class="main">
+        <div class="main-box-1">
+            <div class="tech">
+                <h2 class="tech-header">tech</h2>
+                <ul class="tech-list">
+                    <li class="tech-list-item">&#9737; JavaScript</li>
+                    <li class="tech-list-item">&#9737; React</li>
+                    <li class="tech-list-item">&#9737; HTML5</li>
+                    <li class="tech-list-item">&#9737; CSS3</li>
+                    <li class="tech-list-item">&#9737; Node.js</li>
+                    <li class="tech-list-item">&#9737; Express.js</li>
+                    <li class="tech-list-item">&#9737; jQuery</li>
+                    <li class="tech-list-item">&#9737; PostgreSQL</li>
+                    <li class="tech-list-item">&#9737; Git/GitHub</li>
+                    <li class="tech-list-item">&#9737; Command Line</li>
+                </ul>
+            </div>
+            <div class="skills">
+                <h2 class="skills-header">skills</h2>
+                <ul class="skills-list">
+                    <li class="skills-list-item">&#9737; User Interface</li>
+                    <li class="skills-list-item">&#9737; Test Driven Development</li>
+                    <li class="skills-list-item">&#9737; Strong Leadership Skills</li>
+                    <li class="skills-list-item">&#9737; Working Within a Team</li>
+                    <li class="skills-list-item">&#9737; Working Independently</li>
+                    <li class="skills-list-item">&#9737; Creative Problem Solving</li>
+                    <li class="skills-list-item">&#9737; Communication</li>
+                </ul>
+            </div>
+            <div class="education">
+                <h2 class="education-header">education</h2>
+                <div class="education-1">
+                    <h3 class="school-name">Arizona State University</h3>
+                    <h4 class="city">Tempe, Arizona • 2016</h4>
+                    <p class="degree">BS, Criminal Justice & Criminology, <em>cum laude</em><p>
+                </div>
+            </div>
+        </div>
+        <div class="main-box-2">
+            <h2 class="projects-header">recent projects</h2>
+            <div class="project-1">
+                <h3 class="project-title"><a class="project-link" target="_blank" href="https://findyourpark.netlify.app">Find Your Park</a> - findyourpark.netlify.app</h3>
+                <p class="project-p">Find Your Park is a full-stack application using Node.js with Express on the backend and React on the frontend. The app allows the user to search for California parks by activity, by name, or by choosing a location off the map. Users can sign up for an account and login if they wish to write or read comments made by other users on individual parks, or if they would like to submit a suggestion for a park to be added to the site. Users are authenticated via JSON Web Tokens and passwords are encrypted on the database. All data is stored on a PostgreSQL database using APIs I wrote on the Express server.</p>
+            </div>
+            <div class="project-2">
+                <h3 class="project-title"><a class="project-link" target="_blank" href="https://findyourpark.netlify.app">Hearsay</a> - hearsay-app.now.sh</h3>
+                <p class="project-p">Hearsay is a full stack application built with social justice in mind. Users can log encounters with law enforcement and speak on discussion boards about criminal justice issues. Client side 
+                    is created with React and vanilla CSS, backend with Node.js/Express.js.</p>
+            </div>
+            <h2 class="job-header">experience</h2>
+            <div class="job-1">
+                <h3 class="job-h3">Bloc.io Apprenticeship</h3>
+                <div class="job-title-box">
+                    <h4 class="job-h4">Web Development Track</h4>
+                    <h5 class="job-year">2020</h5>
+                </div>
+                <p class="job-p">Learned current technologies in web and software development through hands on experience. Created multiple
+                    web applications and deployed them to production. Focused on JavaScript, React, jQuery for the frontend while 
+                using Node.js with different libraries on the backend.</p>
+            </div>
+            <div class="job-2">
+                <h3 class="job-h3">City of Mountain View</h3>
+                <div class="job-title-box">
+                    <h4 class="job-h4">Acting Public Safety Dispatch Supervisor<br/>Public Safety Dispatcher II</h4>
+                    <h5 class="job-year">June 2020 &mdash; Present<br/>2019 &mdash; June 2020 </h5>
+                </div>
+                <p class="job-p">Supervised employees on my shift and provided training for new employees. Triaged 9-1-1 and non-emergency calls for police, fire and medical.
+                     Worked collaboratively in a fast-paced, high-pressure environment. Worked with teammates to solve problems
+                    while manipulating multiple computer systems and monitors. Often worked as only one of two dispatchers
+                covering the entire city and made quick, impactful decisions with little or no supervision.</p>
+            </div>
+            <div class="job-3">
+                <h3 class="job-h3">County of Marin</h3>
+                <div class="job-title-box">
+                    <h4 class="job-h4">Communications Dispatcher</h4>
+                    <h5 class="job-year">2017 &mdash; 2019</h5>
+                </div>
+                <p class="job-p">Triaged 9-1-1 and non-emergency calls for six police agencies. Worked three law radio channels. Worked in a large
+                    communications center with teammates to deliver the best possible service under
+                    stressful conditions. Manipulated several
+                    different computer systems and monitors. Trained multiple employees within one year of starting.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
