@@ -13,6 +13,7 @@
             padding-left: 0;
         }
         body {
+            max-width: 1000px;
             display: flex;
             flex-direction: column;
             box-sizing: border-box;
@@ -25,21 +26,20 @@
             
         }
         .header-box-1 {
-            height: 250px;
-            flex: 1;
+            height: 230px;
+            flex: .75;
             background-color: rgb(49, 112, 142,0.6);
             align-items: center;
             display: flex;
-            padding: 1%;
+            
         }
         .header-box-2 {
             display: flex;
             flex-direction: column;
-            height: 250px;
+            height: 230px;
             flex: 2;
             background: rgb(49, 112, 142,0.3);
             align-items: center;
-            padding: 1%;
             justify-content: center;
         }
         .main {
@@ -47,20 +47,19 @@
             display: flex;
         }
         .main-box-1 {
-            flex: 1;
+            flex: .75;
             background: rgb(49, 112, 142,0.3);
-            height: 1100px;
             text-align: left;
             display: flex;
             flex-direction: column;
-            padding: 1%;
+            
         }
         .main-box-2 {
             flex: 2;
-            height: 1100px;
             background: rgb(49, 112, 142,0.05);
-            padding: 1%;
+            
         }
+        
         .job-h3 {
             margin-bottom: 5px;
         }
@@ -81,7 +80,11 @@
             margin: 0;
             padding: 0;
         }
-        .job-p, .projects, .project-p {
+        .project-p {
+            margin-bottom: 5px;
+            margin-top: 5px;
+        }
+        .job-p, .projects {
             margin-top: 0;
         }
         .job-1, .job-2 {
@@ -98,7 +101,7 @@
             margin-bottom: 0;
         }
         
-        .job-1,.job-2,.job-3, .projects-header, .project-1, .project-2,.job-header,.header-sub-box-2,.header-sub-box-3 {
+        .job-1,.job-2,.job-3, .projects-header, .project-1, .project-2,.project-3,.job-header,.header-sub-box-2,.header-sub-box-3 {
             width: 95%;
             margin-left: auto;
             margin-right: auto;
@@ -133,9 +136,19 @@
         .project-link {
             color: rgb(49, 112, 142);
         }
+        .contact-list-item {
+            margin-top: 5px;
+        }
         #site {
             color: rgb(36, 35, 35);
             text-decoration: none;
+            margin-right: 12px;
+            font-size: 17px;
+            border-bottom: 1px solid rgb(0,0,0,0.3)
+        }
+        .link-holder {
+            display: flex;
+            flex-direction: row;
         }
     </style>
 </head>
@@ -147,8 +160,11 @@
                 <ul class="contact-list">
                     <li class="contact-list-item">&#9993; rmac2289@gmail.com</li>
                     <li class="contact-list-item">&#9990; (609) 610-2877</li>
-                    <li class="contact-list-item">1240 Holly St, #2 <br/> San Carlos, CA 94070</li>
-                    <li class="contact-list-item"><a id="site" href="https://ross-scott-macdonald.com" target="_blank">www.ross-scott-macdonald.com</a></li>
+                    <div class="link-holder">
+                        <li class="contact-list-item"><a id="site" href="https://ross-scott-macdonald.com" target="_blank">portfolio</a></li>
+                        <li class="contact-list-item"><a id="site" href="https://www.linkedin.com/in/rsmacdonald/" target="_blank">linkedin</a></li>
+                        <li class="contact-list-item"><a id="site" href="https://www.github.com/rmac2289" target="_blank">github</a></li>
+                    </div>
                 </ul>
             </div>
         </div>
@@ -174,6 +190,7 @@
                 <ul class="tech-list">
                     <li class="tech-list-item">&#9737; JavaScript</li>
                     <li class="tech-list-item">&#9737; React</li>
+                    <li class="tech-list-item">&#9737; React Native</li>
                     <li class="tech-list-item">&#9737; HTML5</li>
                     <li class="tech-list-item">&#9737; CSS3</li>
                     <li class="tech-list-item">&#9737; Node.js</li>
@@ -182,6 +199,7 @@
                     <li class="tech-list-item">&#9737; PostgreSQL</li>
                     <li class="tech-list-item">&#9737; Git/GitHub</li>
                     <li class="tech-list-item">&#9737; Command Line</li>
+                    <li class="tech-list-item">&#9737; Wordpress</li>
                 </ul>
             </div>
             <div class="skills">
@@ -189,11 +207,19 @@
                 <ul class="skills-list">
                     <li class="skills-list-item">&#9737; User Interface</li>
                     <li class="skills-list-item">&#9737; Test Driven Development</li>
-                    <li class="skills-list-item">&#9737; Strong Leadership Skills</li>
+                    <li class="skills-list-item">&#9737; Front-End Development</li>
+                    <li class="skills-list-item">&#9737; Back-End Development</li>
+                    <li class="skills-list-item">&#9737; Responsive Design</li>
+                    <li class="skills-list-item">&#9737; Version Control</li>
+                    <li class="skills-list-item">&#9737; Leadership</li>
+                    <li class="skills-list-item">&#9737; Accountability</li>
                     <li class="skills-list-item">&#9737; Working Within a Team</li>
+                    <li class="skills-list-item">&#9737; Adaptability</li>
                     <li class="skills-list-item">&#9737; Working Independently</li>
                     <li class="skills-list-item">&#9737; Creative Problem Solving</li>
                     <li class="skills-list-item">&#9737; Communication</li>
+                    <li class="skills-list-item">&#9737; Willingness to Learn</li>
+
                 </ul>
             </div>
             <div class="education">
@@ -206,37 +232,54 @@
             </div>
         </div>
         <div class="main-box-2">
-            <h2 class="projects-header">recent projects</h2>
+            <h2 class="projects-header">technical experience</h2>
+            <div class="project-1">
+                <h3 class="project-title">Bloc Web Development Program</h3>
+                <p class="project-p">
+                    &#x26AC; Learned current technologies in web and software development through hands on experience. <br/>
+                    &#x26AC; Created full-stack web applications and deployed them to production. <br/>
+                    &#x26AC; Coded mainly with JavaScript, React and jQuery for the frontend while 
+                using Node.js, PostgreSQL, Express, and other libraries on the backend.</p>
+            </div>
             <div class="project-1">
                 <h3 class="project-title"><a class="project-link" target="_blank" href="https://findyourpark.netlify.app">Find Your Park</a> - findyourpark.netlify.app</h3>
-                <p class="project-p">Find Your Park is a full-stack application using Node.js with Express on the backend and React on the frontend. The app allows the user to search for California parks by activity, by name, or by choosing a location off the map. Users can sign up for an account and login if they wish to write or read comments made by other users on individual parks, or if they would like to submit a suggestion for a park to be added to the site. Users are authenticated via JSON Web Tokens and passwords are encrypted on the database. All data is stored on a PostgreSQL database using APIs I wrote on the Express server.</p>
+                <p class="project-p">Full-stack application that allows users to search for California parks, sign up for an account, and log in to leave comments. </p>
+                <p class="project-p">
+                    &#x26AC; Front-end built with React and CSS using no design libraries. <br/>
+                    &#x26AC; Developed with a mobile-first design mentality. <br/>
+                    &#x26AC; Back-end built using Node.js with Express. <br/>
+                    &#x26AC; JSON Web Tokens used for user authentication. <br/>
+                    &#x26AC; Data stored and managed on a PostgreSQL relational database.</p>
             </div>
             <div class="project-2">
                 <h3 class="project-title"><a class="project-link" target="_blank" href="https://findyourpark.netlify.app">Hearsay</a> - hearsay-app.now.sh</h3>
-                <p class="project-p">Hearsay is a full stack application built with social justice in mind. Users can log encounters with law enforcement and speak on discussion boards about criminal justice issues. Client side 
-                    is created with React and vanilla CSS, backend with Node.js/Express.js.</p>
+                <p class="project-p">Full-stack application for users to log encounters with law enforcement and speak on discussion boards about criminal justice issues.</p>
+                <p class="project-p">
+                    &#x26AC; Responsive front-end built with React and vanilla CSS <br/>
+                    &#x26AC; Back-end built using Node.js with Express and PostgreSQL. <br/>
+                    &#x26AC; JSON Web Tokens used for user authentication. <br/>
+                </p>
             </div>
-            <h2 class="job-header">experience</h2>
-            <div class="job-1">
-                <h3 class="job-h3">Bloc.io Apprenticeship</h3>
-                <div class="job-title-box">
-                    <h4 class="job-h4">Web Development Track</h4>
-                    <h5 class="job-year">2020</h5>
-                </div>
-                <p class="job-p">Learned current technologies in web and software development through hands on experience. Created multiple
-                    web applications and deployed them to production. Focused on JavaScript, React, jQuery for the frontend while 
-                using Node.js with different libraries on the backend.</p>
+            <div class="project-3">
+                <h3 class="project-title"><a class="project-link" target="_blank" href="https://rmac2289.github.io/mealGenerator/">Meal Generator</a> - rmac2289.github.io/mealGenerator/</h3>
+                <p class="project-p">Single-page web application that builds a meal plan for your week.</p>
+                <p class="project-p">
+                    &#x26AC; Responsive application built with JavaScript, jQuery, HTML and CSS. <br/>
+                    &#x26AC; Calls to multiple endpoints on the Spoonacular API to retrieve meal planning data.<br/>
+                    &#x26AC; Search tool that allows users to narrow down results using differnt criteria.<br/>
+                </p>
             </div>
+            <h2 class="job-header">work experience</h2>
+            
             <div class="job-2">
                 <h3 class="job-h3">City of Mountain View</h3>
                 <div class="job-title-box">
                     <h4 class="job-h4">Acting Public Safety Dispatch Supervisor<br/>Public Safety Dispatcher II</h4>
                     <h5 class="job-year">June 2020 &mdash; Present<br/>2019 &mdash; June 2020 </h5>
                 </div>
-                <p class="job-p">Supervised employees on my shift and provided training for new employees. Triaged 9-1-1 and non-emergency calls for police, fire and medical.
-                     Worked collaboratively in a fast-paced, high-pressure environment. Worked with teammates to solve problems
-                    while manipulating multiple computer systems and monitors. Often worked as only one of two dispatchers
-                covering the entire city and made quick, impactful decisions with little or no supervision.</p>
+                <p class="job-p">
+                    &#x26AC; Supervised employees on my shift and provided training for new employees.<br/>
+                    &#x26AC; Triaged 9-1-1 and non-emergency calls for police, fire and medical.<br/>
             </div>
             <div class="job-3">
                 <h3 class="job-h3">County of Marin</h3>
@@ -244,10 +287,9 @@
                     <h4 class="job-h4">Communications Dispatcher</h4>
                     <h5 class="job-year">2017 &mdash; 2019</h5>
                 </div>
-                <p class="job-p">Triaged 9-1-1 and non-emergency calls for six police agencies. Worked three law radio channels. Worked in a large
-                    communications center with teammates to deliver the best possible service under
-                    stressful conditions. Manipulated several
-                    different computer systems and monitors. Trained multiple employees within one year of starting.</p>
+                <p class="job-p">
+                    &#x26AC; Triaged 9-1-1 and non-emergency calls for six public safety agencies. <br/>
+                    &#x26AC; Trained multiple employees within one year of starting.
             </div>
         </div>
     </div>
