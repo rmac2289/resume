@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ross MacDonald Resume</title>
+    <style>
+        * {
+            list-style: none;
+            font-family: Garamond, sans-serif;
+        }
+        ul {
+            padding-left: 0;
+        }
+        body {
+            max-width: 1000px;
+            display: flex;
+            flex-direction: column;
+            box-sizing: border-box;
+            height: 100%;
+        }
+        .header {
+            flex: 1;
+            display: flex;
+            height: 200px;
+            
+        }
+        .header-box-1 {
+            height: 230px;
+            flex: .75;
+            background-color: rgb(49, 112, 142,0.6);
+            align-items: center;
+            display: flex;
+            
+        }
+        .header-box-2 {
+            display: flex;
+            flex-direction: column;
+            height: 230px;
+            flex: 2;
+            background: rgb(49, 112, 142,0.3);
+            align-items: center;
+            justify-content: center;
+        }
+        .main {
+            flex: 3;
+            display: flex;
+        }
+        .main-box-1 {
+            flex: .75;
+            background: rgb(49, 112, 142,0.3);
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            
+        }
+        .main-box-2 {
+            flex: 2;
+            background: rgb(49, 112, 142,0.05);
+            
+        }
+        .header-box-2-p {
+            margin-top: 10px;
+            margin-bottom: 0;
+        }
+        .project-p {
+            margin-bottom: 5px;
+            margin-top: 5px;
+            width: 93%;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 1.4em
+        }
+        h2 {
+            border-bottom: .5px solid rgb(0,0,0,0.2)
+        }
+        .summary {
+            margin-bottom: 0;
+            font-weight: 600;
+            padding-bottom: 1%;
+        }
+        .job-1,.job-2,.job-3, .projects-header, .project-1, .project-2,.project-3,.job-header,.header-sub-box-2,.header-sub-box-3 {
+            width: 95%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .projects-header {
+            width: 90%;
+        }
+        .tech, .header-sub-box-1 {
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .project-title {
+            margin-bottom: 0;
+        }
+        .project-link {
+            color: rgb(49, 112, 142);
+            text-decoration: none;
+        }
+        .contact-list-item {
+            margin-top: 5px;
+        }
+        #site {
+            color: rgb(36, 35, 35);
+            text-decoration: none;
+            margin-right: 12px;
+            font-size: 17px;
+            border-bottom: 1px solid rgb(0,0,0,0.3)
+        }
+        .link-holder {
+            display: flex;
+            flex-direction: row;
+        }
+        .job-title, .attention {
+            font-size: 18px;
+            font-weight: 400;
+            margin-top: 10px;
+            margin-left: 20px;
+        }
+        #featured {
+            margin-top: 5px;
+        }
+        .project-title {
+            border-bottom: 1px solid rgb(0,0,0,0.2)
+        }
+        .tech-list {
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="header-box-1">
+            <div class="header-sub-box-1">
+                <h1 class="name-header">ROSS <br/>MACDONALD</h1>
+                <ul class="contact-list">
+                    <li class="contact-list-item">&#9993; rmac2289@gmail.com</li>
+                    <li class="contact-list-item">&#9990; (609) 610-2877</li>
+                    <div class="link-holder">
+                        <li class="contact-list-item"><a id="site" href="https://ross-scott-macdonald.com" target="_blank">portfolio</a></li>
+                        <li class="contact-list-item"><a id="site" href="https://www.linkedin.com/in/rsmacdonald/" target="_blank">linkedin</a></li>
+                        <li class="contact-list-item"><a id="site" href="https://www.github.com/rmac2289" target="_blank">github</a></li>
+                    </div>
+                </ul>
+            </div>
+        </div>
+        <div class="header-box-2">
+            <div class="header-sub-box-2">
+                <div class="detail-box">
+                    <h2 class="summary">august 6th, 2020</h2>
+                </div>
+                <div class="detail-box">
+                    <h2 class="summary summary-margin">subject <span class="job-title">job title</span></h2>
+                </div>
+                <div class="detail-box">
+                    <h2 class="summary summary-margin">attention <span class="attention">hiring manager</h2>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <div class="main">
+        <div class="main-box-1">
+            <div class="tech">
+                <h2 class="tech-header">my work</h2>
+                <h3 class="project-title"><a class="project-link" href="https://findyourpark.netlify.app/" target="_blank">Find Your Park</a></h3>
+                <p id="featured"><em>Featured as a project of the month on careerkarma.com. Created to help users find information on local parks.</em></p>
+                <ul class="tech-list">
+                    <li class="tech-list-item">&#x26AC; React Front-End</li>
+                    <li class="tech-list-item">&#x26AC; Node.js/Express APIs</li>
+                    <li class="tech-list-item">&#x26AC; Responsive Design</li>
+                    <li class="tech-list-item">&#x26AC; PostgreSQL Database</li>
+                </ul>
+                <h3 class="project-title"><a class="project-link" href="https://findyourpark.netlify.app/" target="_blank">Hearsay</a></h3>
+                <p id="featured"><em>Full-Stack app with social justice in mind.</em></p>
+                <ul class="tech-list">
+                    <li class="tech-list-item">&#x26AC; React Front-End</li>
+                    <li class="tech-list-item">&#x26AC; Node.js/Express APIs</li>
+                    <li class="tech-list-item">&#x26AC; Responsive Design</li>
+                    <li class="tech-list-item">&#x26AC; PostgreSQL Database</li>
+                </ul>
+                <h3 class="project-title"><a class="project-link" href="https://rmac2289.github.io/mealGenerator/" target="_blank">Meal Generator</a></h3>
+                <p id="featured"><em>Single-page app to plan your meals for the week.</em></p>
+                <ul class="tech-list">
+                    <li class="tech-list-item">&#x26AC; jQuery/JavaScript</li>
+                    <li class="tech-list-item">&#x26AC; HTML5/CSS3</li>
+                    <li class="tech-list-item">&#x26AC; Responsive Design</li>
+                    <li class="tech-list-item">&#x26AC; Multiple API Calls</li>
+                </ul>
+            </div>
+        </div>
+        <div class="main-box-2">
+            <h2 class="projects-header">why am I a great fit?</h2>
+            <div class="project-1">
+                <p class="project-p">
+                    It seems too obvious to say just how important remote health care currently is, but I suppose I’ve just said it anyway. Covid-19 truly has changed the world, and Hims & Hers is ahead of the curve. This would be a great match for both of us;  I have full-stack experience, but the front-end is where my passion lies. From cruising around the Hims & Hers websites, I’ve noticed that both pages are using React. Perfect! I’ve written multiple applications from scratch using React. 
+                </p>
+            </div>
+            <br/>
+            <div class="project-1">
+                <p class="project-p">
+                    While we’re on the topic of how great a fit I am, let’s talk about my most recent project. I’ve published a full-stack web application using React, Node.js and a PostgreSQL database called ‘Find Your Park’ 
+(https://findyourpark.netlify.app). The app allows Californians to find parks using different search methods in tandem with an interactive map. Users can sign up for an account and discuss aspects of the parks via their comments pages. This and other projects I built can be found on my personal portfolio website (https://ross-scott-macdonald.com).
+                </p>
+            </div>
+            <br/>
+            <div class="project-2">
+                <p class="project-p">
+                    I’m a relatively easy-going, laid back individual - that said, I am no stranger to stress, deadlines, and high-stakes outcomes on the job. In my previous career path, I started with zero experience; within a year I was training new employees and within three years was made a supervisor. I powered my way through Bloc.io's web development program while working my regular full-time job. I know I can not only be a part of the team, but in time become a leader. 
+                </p>
+            </div>
+            <br/>
+            <div class="project-3">
+                <p class="project-p">
+                    Thank you for your consideration. I’m excited about the opportunity to contribute to the success of Hims & Hers.
+                </p>
+            </div>
+            <br/>
+            <div class="project-3">
+                <p class="project-p">
+                    Sincerely yours, <br/>
+                    Ross MacDonald 
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
